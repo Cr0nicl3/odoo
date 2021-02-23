@@ -44,18 +44,18 @@ msgstr ""
 #: model:ir.model.fields,field_description:my_recolecta.field_res_partner__authored_colecta_ids
 #: model:ir.model.fields,field_description:my_recolecta.field_res_users__authored_colecta_ids
 #: model_terms:ir.ui.view,arch_db:my_recolecta.view_partner_author
-msgid "Authored colectas"
+msgid "Authored recollections"
 msgstr ""
 
 #. module: my_recolecta
 #: model:ir.model.fields,field_description:my_recolecta.field_recolecta_colecta__author_ids
-msgid "Authors"
-msgstr "Autores"
+msgid "Deliverer"
+msgstr "Repartidor"
 
 #. module: my_recolecta
 #: model:ir.model.fields.selection,name:my_recolecta.selection__recolecta_colecta__state__available
-msgid "Available"
-msgstr "Disponible"
+msgid "Delivered"
+msgstr "Entregado"
 
 #. module: my_recolecta
 #: model:ir.model.fields,field_description:my_recolecta.field_recolecta_member__bank_ids
@@ -65,13 +65,13 @@ msgstr ""
 #. module: my_recolecta
 #: model:ir.actions.act_window,name:my_recolecta.recolecta_colecta_category_action
 #: model:ir.ui.menu,name:my_recolecta.recolecta_colecta_category_menu
-msgid "colecta Categories"
-msgstr "Categorías de libro"
+msgid "Recollection Categories"
+msgstr "Categorías de recolecta"
 
 #. module: my_recolecta
 #: model:ir.ui.menu,name:my_recolecta.recolecta_colecta_menu
-msgid "colectas"
-msgstr "Libros"
+msgid "Recollections"
+msgstr "Recolectas"
 
 #. module: my_recolecta
 #: model:ir.model.fields.selection,name:my_recolecta.selection__recolecta_colecta__state__borrowed

@@ -42,17 +42,17 @@ msgstr ""
 #: model:ir.model.fields,field_description:my_recolecta.field_res_partner__authored_colecta_ids
 #: model:ir.model.fields,field_description:my_recolecta.field_res_users__authored_colecta_ids
 #: model_terms:ir.ui.view,arch_db:my_recolecta.view_partner_author
-msgid "Authored colectas"
+msgid "Authored recollections"
 msgstr ""
 
 #. module: my_recolecta
 #: model:ir.model.fields,field_description:my_recolecta.field_recolecta_colecta__author_ids
-msgid "Authors"
+msgid "Deliverer"
 msgstr ""
 
 #. module: my_recolecta
 #: model:ir.model.fields.selection,name:my_recolecta.selection__recolecta_colecta__state__available
-msgid "Available"
+msgid "Delivered"
 msgstr ""
 
 #. module: my_recolecta
@@ -63,12 +63,12 @@ msgstr ""
 #. module: my_recolecta
 #: model:ir.actions.act_window,name:my_recolecta.recolecta_colecta_category_action
 #: model:ir.ui.menu,name:my_recolecta.recolecta_colecta_category_menu
-msgid "colecta Categories"
+msgid "Recollection Categories"
 msgstr ""
 
 #. module: my_recolecta
 #: model:ir.ui.menu,name:my_recolecta.recolecta_colecta_menu
-msgid "colectas"
+msgid "Recollections"
 msgstr ""
 
 #. module: my_recolecta
