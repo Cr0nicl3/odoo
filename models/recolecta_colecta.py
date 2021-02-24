@@ -92,7 +92,7 @@ class recolectacolecta(models.Model):
                      ('category_id.name', '=', 'Category Name 2')
         ]
         colectas = self.search(domain)
-        logger.info('colectas found: %s', colectas)
+        logger.info('Collections found: %s', colectas)
         return True
 
 class recolectaMember(models.Model):
