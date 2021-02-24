@@ -11,7 +11,7 @@
 
     <!-- Form View -->
     <record id="recolecta_colecta_category_view_form" model="ir.ui.view">
-        <field name="name">reCollection categories Form</field>
+        <field name="name">Recollection categories Form</field>
         <field name="model">recolecta.colecta.category</field>
         <field name="arch" type="xml">
             <form>
@@ -33,7 +33,7 @@
 
     <!-- Tree(list) View -->
     <record id="recolecta_colecta_category_view_tree" model="ir.ui.view">
-        <field name="name">Collection book List</field>
+        <field name="name">Collection list</field>
         <field name="model">recolecta.colecta.category</field>
         <field name="arch" type="xml">
             <tree>
