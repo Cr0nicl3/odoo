@@ -53,9 +53,9 @@ msgid "Delivers"
 msgstr "Repartidores"
 
 #. module: my_recolecta
-#: model:ir.model.fields.selection,name:my_recolecta.selection__recolecta_colecta__state__checked
-msgid "checked"
-msgstr "Revisada"
+#: model:ir.model.fields.selection,name:my_recolecta.selection__recolecta_colecta__state__To do
+msgid "To do"
+msgstr "Por hacer"
 
 #. module: my_recolecta
 #: model:ir.model.fields,field_description:my_recolecta.field_recolecta_member__bank_ids
@@ -74,9 +74,9 @@ msgid "Collections"
 msgstr "Colectas"
 
 #. module: my_recolecta
-#: model:ir.model.fields.selection,name:my_recolecta.selection__recolecta_colecta__state__Lend
-msgid "Lend"
-msgstr "Entregado"
+#: model:ir.model.fields.selection,name:my_recolecta.selection__recolecta_colecta__state__In process
+msgid "In process"
+msgstr "En proceso"
 
 #. module: my_recolecta
 #: model:ir.ui.menu,name:my_recolecta.recolecta_colecta_menu_calendar
@@ -351,9 +351,9 @@ msgid "Log Members"
 msgstr "Guardar miembros"
 
 #. module: my_recolecta
-#: model:ir.model.fields.selection,name:my_recolecta.selection__recolecta_colecta__state__Cancelled
-msgid "Cancelled"
-msgstr "Cancelada"
+#: model:ir.model.fields.selection,name:my_recolecta.selection__recolecta_colecta__state__Done
+msgid "Done"
+msgstr "Terminada"
 
 #. module: my_recolecta
 #: model_terms:ir.ui.view,arch_db:my_recolecta.recolecta_colecta_view_search
@@ -362,18 +362,18 @@ msgstr "Colectas canceladas"
 
 #. module: my_recolecta
 #: model_terms:ir.ui.view,arch_db:my_recolecta.recolecta_colecta_view_form
-msgid "Make checked"
-msgstr "Establecer como revisada"
+msgid "Make To do"
+msgstr "Establecer como por hacer"
 
 #. module: my_recolecta
 #: model_terms:ir.ui.view,arch_db:my_recolecta.recolecta_colecta_view_form
-msgid "Make Lend"
-msgstr "Prestar"
+msgid "Make In process"
+msgstr "Marcar como en proceso"
 
 #. module: my_recolecta
 #: model_terms:ir.ui.view,arch_db:my_recolecta.recolecta_colecta_view_form
-msgid "Make Cancelled"
-msgstr "Establecer como perdido"
+msgid "Make Done"
+msgstr "Establecer como terminada"
 
 #. module: my_recolecta
 #: model:ir.model.fields,field_description:my_recolecta.field_recolecta_member__member_number
@@ -537,8 +537,8 @@ msgstr "Descripción"
 
 #. module: my_recolecta
 #: model:ir.model.fields.selection,name:my_recolecta.selection__recolecta_colecta__state__draft
-msgid "Unchecked"
-msgstr "No revisada"
+msgid "Planified"
+msgstr "Planificada"
 
 #. module: my_recolecta
 #: model_terms:ir.ui.view,arch_db:my_recolecta.recolecta_colecta_view_form

@@ -51,8 +51,8 @@ msgid "Delivers"
 msgstr ""
 
 #. module: my_recolecta
-#: model:ir.model.fields.selection,name:my_recolecta.selection__recolecta_colecta__state__checked
-msgid "checked"
+#: model:ir.model.fields.selection,name:my_recolecta.selection__recolecta_colecta__state__To do
+msgid "To do"
 msgstr ""
 
 #. module: my_recolecta
@@ -72,8 +72,8 @@ msgid "colectas"
 msgstr ""
 
 #. module: my_recolecta
-#: model:ir.model.fields.selection,name:my_recolecta.selection__recolecta_colecta__state__Lend
-msgid "Lend"
+#: model:ir.model.fields.selection,name:my_recolecta.selection__recolecta_colecta__state__In process
+msgid "In process"
 msgstr ""
 
 #. module: my_recolecta
@@ -349,8 +349,8 @@ msgid "Log Members"
 msgstr ""
 
 #. module: my_recolecta
-#: model:ir.model.fields.selection,name:my_recolecta.selection__recolecta_colecta__state__Cancelled
-msgid "Cancelled"
+#: model:ir.model.fields.selection,name:my_recolecta.selection__recolecta_colecta__state__Done
+msgid "Done"
 msgstr ""
 
 #. module: my_recolecta
@@ -360,17 +360,17 @@ msgstr ""
 
 #. module: my_recolecta
 #: model_terms:ir.ui.view,arch_db:my_recolecta.recolecta_colecta_view_form
-msgid "Make checked"
+msgid "Make To do"
 msgstr ""
 
 #. module: my_recolecta
 #: model_terms:ir.ui.view,arch_db:my_recolecta.recolecta_colecta_view_form
-msgid "Make Lend"
+msgid "Make In process"
 msgstr ""
 
 #. module: my_recolecta
 #: model_terms:ir.ui.view,arch_db:my_recolecta.recolecta_colecta_view_form
-msgid "Make Cancelled"
+msgid "Make Done"
 msgstr ""
 
 #. module: my_recolecta
@@ -535,7 +535,7 @@ msgstr ""
 
 #. module: my_recolecta
 #: model:ir.model.fields.selection,name:my_recolecta.selection__recolecta_colecta__state__draft
-msgid "Unchecked"
+msgid "Planified"
 msgstr ""
 
 #. module: my_recolecta

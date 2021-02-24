@@ -65,7 +65,7 @@
                                                     </td>
                                                     <td>
                                                         <!-- Ejemplo de if -->
-                                                        <t t-if="colecta.state == 'Cancelled'">Not checked</t>
+                                                        <t t-if="colecta.state == 'Done'">Not To do</t>
                                                         <t t-else=""></t>
                                                     </td>
                                                 </tr>

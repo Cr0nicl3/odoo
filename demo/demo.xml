@@ -27,7 +27,7 @@
 
         <record id="colecta_cmd" model="recolecta.colecta">
             <field name="name">In the beginning was the command line</field>
-            <field name="state">checked</field>
+            <field name="state">To do</field>
             <field name="date_delivery">2021-01-01</field>
             <field name="category_id" ref="category_assay"/>
             <field name="Deliver_ids" eval="[(6, 0, [ ref('Deliver_perichan'), ])]"/>
@@ -35,7 +35,7 @@
 
         <record id="colecta_tomate" model="recolecta.colecta">
             <field name="name">Tomates</field>
-            <field name="state">Cancelled</field>
+            <field name="state">Done</field>
             <field name="date_delivery">2021-01-02</field>
             <field name="category_id" ref="category_vegetable"/>
             <field name="Deliver_ids" eval="[(6, 0, [ ref('Deliver_agrimur'), ])]"/>

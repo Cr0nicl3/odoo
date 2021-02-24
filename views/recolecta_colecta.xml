@@ -67,9 +67,9 @@
         <field name="arch" type="xml">
             <form>
                 <header>
-                    <button name="make_checked" string="Make checked" type="object"/>
-                    <button name="make_Lend"  string="Make Lend" type="object"/>
-                    <button name="make_Cancelled"  string="Make Cancelled" type="object"/>
+                    <button name="make_To do" string="Make To do" type="object"/>
+                    <button name="make_In_process"  string="Make In process" type="object"/>
+                    <button name="make_Done"  string="Make Done" type="object"/>
                     <button name="log_all_recolecta_members"  string="Log Members" type="object"/>
                     <button name="create_categories" string="Create Categories" type="object"/>
                     <button name="change_release_date" string="Update Date" type="object"/>
@@ -111,7 +111,7 @@
                 <field name="name"/>
                 <field name="Deliver_ids"/>
                 <filter string="Without Delivers" name="without_Deliver" domain="[('Deliver_ids','=',False)]"/>
-                <filter string="Cancellled collections" name="without_Deliver" domain="[('state','=','Cancelled')]"/>
+                <filter string="Cancellled collections" name="without_Deliver" domain="[('state','=','Done')]"/>
             </search>
         </field>
     </record>

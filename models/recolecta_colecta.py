@@ -18,20 +18,20 @@ class recolectacolecta(models.Model):
     category_id = fields.Many2one('recolecta.colecta.category', string='Category')
 
     state = fields.Selection([
-        ('draft', 'Unchecked'),
-        ('checked', 'checked'),
-        ('Lend', 'Lend'),
-        ('Cancelled', 'Cancelled')],
+        ('draft', 'Planified'),
+        ('To do', 'To do'),
+        ('In process', 'In process'),
+        ('Done', 'Done')],
         'State', default="draft")
 
     @api.model
     def is_allowed_transition(self, old_state, new_state):
-        allowed = [('draft', 'checked'),
-                   ('checked', 'Lend'),
-                   ('Lend', 'checked'),
-                   ('checked', 'Cancelled'),
-                   ('Lend', 'Cancelled'),
-                   ('Cancelled', 'checked')]
+        allowed = [('draft', 'To do'),
+                   ('To do', 'In process'),
+                   ('In process', 'To do'),
+                   ('To do', 'Done'),
+                   ('In process', 'Done'),
+                   ('Done', 'To do')]
         return (old_state, new_state) in allowed
 
     def change_state(self, new_state):
@@ -42,14 +42,14 @@ class recolectacolecta(models.Model):
                 message = _('Moving from %s to %s is not allowd') % (colecta.state, new_state)
                 raise UserError(message)
 
-    def make_checked(self):
-        self.change_state('checked')
+    def make_To do(self):
+        self.change_state('To do')
 
-    def make_Lend(self):
-        self.change_state('Lend')
+    def make_In_process(self):
+        self.change_state('In process')
 
-    def make_Cancelled(self):
-        self.change_state('Cancelled')
+    def make_Done(self):
+        self.change_state('Done')
 
     def log_all_recolecta_members(self):
         recolecta_member_model = self.env['recolecta.member']  # This is an empty recordset of model recolecta.member
