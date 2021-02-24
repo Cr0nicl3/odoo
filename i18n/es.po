@@ -531,9 +531,9 @@ msgstr ""
 
 #. module: my_recolecta
 #: model:ir.model.fields,field_description:my_recolecta.field_recolecta_colecta__name
-#: model:ir.model.fields,field_description:my_recolecta.field_recolecta_member__title
-msgid "Title"
-msgstr ""
+#: model:ir.model.fields,field_description:my_recolecta.field_recolecta_member__Description
+msgid "Description"
+msgstr "Descripción"
 
 #. module: my_recolecta
 #: model:ir.model.fields.selection,name:my_recolecta.selection__recolecta_colecta__state__draft

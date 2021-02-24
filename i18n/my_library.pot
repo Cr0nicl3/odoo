@@ -529,8 +529,8 @@ msgstr ""
 
 #. module: my_recolecta
 #: model:ir.model.fields,field_description:my_recolecta.field_recolecta_colecta__name
-#: model:ir.model.fields,field_description:my_recolecta.field_recolecta_member__title
-msgid "Title"
+#: model:ir.model.fields,field_description:my_recolecta.field_recolecta_member__Description
+msgid "Description"
 msgstr ""
 
 #. module: my_recolecta

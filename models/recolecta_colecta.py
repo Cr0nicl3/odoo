@@ -12,7 +12,7 @@ class recolectacolecta(models.Model):
     _name = 'recolecta.colecta'
     _description = 'Collection book'
 
-    name = fields.Char('Title', required=True)
+    name = fields.Char('Description', required=True)
     date_delivery = fields.Date('Delivery date')
     Deliver_ids = fields.Many2many('res.partner', string='Delivers')
     category_id = fields.Many2one('recolecta.colecta.category', string='Category')
