@@ -65,8 +65,8 @@ msgstr ""
 #. module: my_recolecta
 #: model:ir.actions.act_window,name:my_recolecta.recolecta_colecta_category_action
 #: model:ir.ui.menu,name:my_recolecta.recolecta_colecta_category_menu
-msgid "colecta Categories"
-msgstr "Categorías de libro"
+msgid "Collection categories"
+msgstr "Categorías de colecta"
 
 #. module: my_recolecta
 #: model:ir.ui.menu,name:my_recolecta.recolecta_colecta_menu
