@@ -67,7 +67,7 @@
         <field name="arch" type="xml">
             <form>
                 <header>
-                    <button name="make_To do" string="Make To do" type="object"/>
+                    <button name="make_To_do" string="Make To do" type="object"/>
                     <button name="make_In_process"  string="Make In process" type="object"/>
                     <button name="make_Done"  string="Make Done" type="object"/>
                     <button name="log_all_recolecta_members"  string="Log Members" type="object"/>

@@ -42,7 +42,7 @@ class recolectacolecta(models.Model):
                 message = _('Moving from %s to %s is not allowd') % (colecta.state, new_state)
                 raise UserError(message)
 
-    def make_To do(self):
+    def make_To_do(self):
         self.change_state('To do')
 
     def make_In_process(self):
