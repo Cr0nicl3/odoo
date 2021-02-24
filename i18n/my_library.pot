@@ -42,7 +42,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:my_recolecta.field_res_partner__Delivered_colecta_ids
 #: model:ir.model.fields,field_description:my_recolecta.field_res_users__Delivered_colecta_ids
 #: model_terms:ir.ui.view,arch_db:my_recolecta.view_partner_Deliver
-msgid "Delivered colectas"
+msgid "Delivered collections"
 msgstr ""
 
 #. module: my_recolecta

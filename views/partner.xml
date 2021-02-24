@@ -9,7 +9,7 @@
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
             <page name="internal_notes" position="before">
-                <page name="recolecta_colectas" string="Delivered colectas">
+                <page name="recolecta_colectas" string="Delivered collections">
                 <group>
                     <field name="Delivered_colecta_ids"/>
                 </group>

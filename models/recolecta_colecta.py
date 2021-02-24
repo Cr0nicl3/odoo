@@ -112,6 +112,6 @@ class ResPartner(models.Model):
 
     Delivered_colecta_ids = fields.Many2many(
         'recolecta.colecta',
-        string='Delivered colectas',
+        string='Delivered collections',
         # relation='recolecta_colecta_res_partner_rel'  # optional
     )
