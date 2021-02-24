@@ -3,12 +3,12 @@
 
         <!--Delivers -->
 
-        <record id="Deliver_neal_stephenson" model="res.partner">
-            <field name="name">Neal Stephenson</field>
+        <record id="Deliver_perichan" model="res.partner">
+            <field name="name">Perichan</field>
         </record>
 
-        <record id="Deliver_jrr_tolkien" model="res.partner">
-            <field name="name">J. R. R. Tolkien</field>
+        <record id="Deliver_agrimur" model="res.partner">
+            <field name="name">Agrimur</field>
         </record>        
 
         <!-- Collection categories -->
@@ -18,7 +18,7 @@
             <field name="description">Not fiction</field>
         </record>
 
-        <record id="category_fantasy" model="recolecta.colecta.category">
+        <record id="category_vegetable" model="recolecta.colecta.category">
             <field name="name">Fantasy</field>
             <field name="description">Fiction</field>
         </record>        
@@ -28,17 +28,17 @@
         <record id="colecta_cmd" model="recolecta.colecta">
             <field name="name">In the beginning was the command line</field>
             <field name="state">checked</field>
-            <field name="date_release">2021-01-01</field>
+            <field name="date_delivery">2021-01-01</field>
             <field name="category_id" ref="category_assay"/>
-            <field name="Deliver_ids" eval="[(6, 0, [ ref('Deliver_neal_stephenson'), ])]"/>
+            <field name="Deliver_ids" eval="[(6, 0, [ ref('Deliver_perichan'), ])]"/>
         </record>
 
         <record id="colecta_ring" model="recolecta.colecta">
-            <field name="name">The lord of the rings</field>
+            <field name="name">Tomates</field>
             <field name="state">Cancelled</field>
-            <field name="date_release">2021-01-02</field>
-            <field name="category_id" ref="category_fantasy"/>
-            <field name="Deliver_ids" eval="[(6, 0, [ ref('Deliver_jrr_tolkien'), ])]"/>
+            <field name="date_delivery">2021-01-02</field>
+            <field name="category_id" ref="category_vegetable"/>
+            <field name="Deliver_ids" eval="[(6, 0, [ ref('Deliver_agrimur'), ])]"/>
         </record>
 
     </data>

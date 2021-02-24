@@ -455,8 +455,8 @@ msgid "Release Calendar"
 msgstr ""
 
 #. module: my_recolecta
-#: model:ir.model.fields,field_description:my_recolecta.field_recolecta_colecta__date_release
-msgid "Release Date"
+#: model:ir.model.fields,field_description:my_recolecta.field_recolecta_colecta__date_delivery
+msgid "Delivery date"
 msgstr ""
 
 #. module: my_recolecta

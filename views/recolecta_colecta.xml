@@ -23,7 +23,7 @@
         <field name="name">Colecta Calendar</field>
         <field name="model">recolecta.colecta</field>
         <field name="arch" type="xml">
-            <calendar string="Release Calendar" date_start="date_release" mode="month">
+            <calendar string="Release Calendar" date_start="date_delivery" mode="month">
                 <field name="name"/>
             </calendar>
         </field>
@@ -83,7 +83,7 @@
                     </group>
                     <group>
                         <field name="category_id"/>
-                        <field name="date_release"/>
+                        <field name="date_delivery"/>
                     </group>
                 </group>
             </form>
@@ -97,7 +97,7 @@
         <field name="arch" type="xml">
             <tree>
                 <field name="name"/>
-                <field name="date_release"/>
+                <field name="date_delivery"/>
             </tree>
         </field>
     </record>

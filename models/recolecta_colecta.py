@@ -13,7 +13,7 @@ class recolectacolecta(models.Model):
     _description = 'Collection book'
 
     name = fields.Char('Title', required=True)
-    date_release = fields.Date('Release Date')
+    date_delivery = fields.Date('Delivery date')
     Deliver_ids = fields.Many2many('res.partner', string='Delivers')
     category_id = fields.Many2one('recolecta.colecta.category', string='Category')
 
@@ -81,7 +81,7 @@ class recolectacolecta(models.Model):
 
     def change_release_date(self):
         self.ensure_one()
-        self.date_release = fields.Date.today()
+        self.date_delivery = fields.Date.today()
 
     def find_colecta(self):
         domain = [
