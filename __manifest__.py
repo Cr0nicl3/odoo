@@ -3,11 +3,11 @@
     'name': "Seguimiento de recolecta",  # Module title
     'summary': "Módulo para administrar la recolecta entrante",  # Module subtitle phrase
     'description': """
-Manage recolecta
+Manage collection
 ==============
-Description related to recolecta.
+Description related to recollection.
     """,  # Supports reStructuredText(RST) format
-    'Deliver': "Parth Gajjar",
+    'author': "Gines Hernandez. Juan Manuel Alonso",
     'website': "http://www.example.com",
     'category': 'Tools',
     'version': '14.0.1',
