@@ -22,7 +22,7 @@
         <!-- Defino la plantilla para el report -->
         <template id="report_colectas_view">
             <t t-call="web.html_container">
-                <!-- Para cada autor -->
+                <!-- Para cada Repartidor -->
                 <t t-foreach="docs" t-as="doc">
                     <t t-call="web.external_layout">
                         <div class="page">
@@ -58,14 +58,14 @@
                                                     <td><span t-field="colecta.name"/></td>
                                                     <td>
                                                         <ul>
-                                                            <li t-foreach="colecta.author_ids" t-as="author">
-                                                               <span t-field="author.name"/>
+                                                            <li t-foreach="colecta.Deliver_ids" t-as="Deliver">
+                                                               <span t-field="Deliver.name"/>
                                                             </li>
                                                         </ul>
                                                     </td>
                                                     <td>
                                                         <!-- Ejemplo de if -->
-                                                        <t t-if="colecta.state == 'lost'">Not available</t>
+                                                        <t t-if="colecta.state == 'Cancelled'">Not checked</t>
                                                         <t t-else=""></t>
                                                     </td>
                                                 </tr>

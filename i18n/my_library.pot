@@ -38,21 +38,21 @@ msgid ""
 msgstr ""
 
 #. module: my_recolecta
-#: model:ir.model.fields,field_description:my_recolecta.field_recolecta_member__authored_colecta_ids
-#: model:ir.model.fields,field_description:my_recolecta.field_res_partner__authored_colecta_ids
-#: model:ir.model.fields,field_description:my_recolecta.field_res_users__authored_colecta_ids
-#: model_terms:ir.ui.view,arch_db:my_recolecta.view_partner_author
-msgid "Authored recollections"
+#: model:ir.model.fields,field_description:my_recolecta.field_recolecta_member__Delivered_colecta_ids
+#: model:ir.model.fields,field_description:my_recolecta.field_res_partner__Delivered_colecta_ids
+#: model:ir.model.fields,field_description:my_recolecta.field_res_users__Delivered_colecta_ids
+#: model_terms:ir.ui.view,arch_db:my_recolecta.view_partner_Deliver
+msgid "Delivered colectas"
 msgstr ""
 
 #. module: my_recolecta
-#: model:ir.model.fields,field_description:my_recolecta.field_recolecta_colecta__author_ids
-msgid "Deliverer"
+#: model:ir.model.fields,field_description:my_recolecta.field_recolecta_colecta__Deliver_ids
+msgid "Delivers"
 msgstr ""
 
 #. module: my_recolecta
-#: model:ir.model.fields.selection,name:my_recolecta.selection__recolecta_colecta__state__available
-msgid "Delivered"
+#: model:ir.model.fields.selection,name:my_recolecta.selection__recolecta_colecta__state__checked
+msgid "checked"
 msgstr ""
 
 #. module: my_recolecta
@@ -63,17 +63,17 @@ msgstr ""
 #. module: my_recolecta
 #: model:ir.actions.act_window,name:my_recolecta.recolecta_colecta_category_action
 #: model:ir.ui.menu,name:my_recolecta.recolecta_colecta_category_menu
-msgid "Recollection Categories"
+msgid "Collection categories"
 msgstr ""
 
 #. module: my_recolecta
 #: model:ir.ui.menu,name:my_recolecta.recolecta_colecta_menu
-msgid "Recollections"
+msgid "colectas"
 msgstr ""
 
 #. module: my_recolecta
-#: model:ir.model.fields.selection,name:my_recolecta.selection__recolecta_colecta__state__borrowed
-msgid "Borrowed"
+#: model:ir.model.fields.selection,name:my_recolecta.selection__recolecta_colecta__state__Lend
+msgid "Lend"
 msgstr ""
 
 #. module: my_recolecta
@@ -283,7 +283,7 @@ msgstr ""
 #: model:ir.model.fields,help:my_recolecta.field_recolecta_member__type
 msgid ""
 "Invoice & Delivery addresses are used in sales orders. Private addresses are"
-" only visible by authorized users."
+" only visible by Deliverized users."
 msgstr ""
 
 #. module: my_recolecta
@@ -324,7 +324,7 @@ msgstr ""
 
 #. module: my_recolecta
 #: model:res.groups,name:my_recolecta.group_librarian
-msgid "Librarians"
+msgid "In-charge"
 msgstr ""
 
 #. module: my_recolecta
@@ -340,7 +340,7 @@ msgstr ""
 
 #. module: my_recolecta
 #: model:ir.model,name:my_recolecta.model_recolecta_member
-msgid "recolecta member"
+msgid "Collection member"
 msgstr ""
 
 #. module: my_recolecta
@@ -349,28 +349,28 @@ msgid "Log Members"
 msgstr ""
 
 #. module: my_recolecta
-#: model:ir.model.fields.selection,name:my_recolecta.selection__recolecta_colecta__state__lost
-msgid "Lost"
+#: model:ir.model.fields.selection,name:my_recolecta.selection__recolecta_colecta__state__Cancelled
+msgid "Cancelled"
 msgstr ""
 
 #. module: my_recolecta
 #: model_terms:ir.ui.view,arch_db:my_recolecta.recolecta_colecta_view_search
-msgid "Lost colectas"
+msgid "Cancellled collections"
 msgstr ""
 
 #. module: my_recolecta
 #: model_terms:ir.ui.view,arch_db:my_recolecta.recolecta_colecta_view_form
-msgid "Make Available"
+msgid "Make checked"
 msgstr ""
 
 #. module: my_recolecta
 #: model_terms:ir.ui.view,arch_db:my_recolecta.recolecta_colecta_view_form
-msgid "Make Borrowed"
+msgid "Make Lend"
 msgstr ""
 
 #. module: my_recolecta
 #: model_terms:ir.ui.view,arch_db:my_recolecta.recolecta_colecta_view_form
-msgid "Make Lost"
+msgid "Make Cancelled"
 msgstr ""
 
 #. module: my_recolecta
@@ -535,7 +535,7 @@ msgstr ""
 
 #. module: my_recolecta
 #: model:ir.model.fields.selection,name:my_recolecta.selection__recolecta_colecta__state__draft
-msgid "Unavailable"
+msgid "Unchecked"
 msgstr ""
 
 #. module: my_recolecta
@@ -563,7 +563,7 @@ msgstr ""
 
 #. module: my_recolecta
 #: model_terms:ir.ui.view,arch_db:my_recolecta.recolecta_colecta_view_search
-msgid "Without Authors"
+msgid "Without Delivers"
 msgstr ""
 
 #. module: my_recolecta

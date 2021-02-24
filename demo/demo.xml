@@ -1,17 +1,17 @@
 <odoo>
     <data>
 
-        <!--Authors -->
+        <!--Delivers -->
 
-        <record id="author_neal_stephenson" model="res.partner">
+        <record id="Deliver_neal_stephenson" model="res.partner">
             <field name="name">Neal Stephenson</field>
         </record>
 
-        <record id="author_jrr_tolkien" model="res.partner">
+        <record id="Deliver_jrr_tolkien" model="res.partner">
             <field name="name">J. R. R. Tolkien</field>
         </record>        
 
-        <!-- colecta Categories -->
+        <!-- Collection categories -->
 
         <record id="category_assay" model="recolecta.colecta.category">
             <field name="name">Assay</field>
@@ -27,18 +27,18 @@
 
         <record id="colecta_cmd" model="recolecta.colecta">
             <field name="name">In the beginning was the command line</field>
-            <field name="state">available</field>
+            <field name="state">checked</field>
             <field name="date_release">2021-01-01</field>
             <field name="category_id" ref="category_assay"/>
-            <field name="author_ids" eval="[(6, 0, [ ref('author_neal_stephenson'), ])]"/>
+            <field name="Deliver_ids" eval="[(6, 0, [ ref('Deliver_neal_stephenson'), ])]"/>
         </record>
 
         <record id="colecta_ring" model="recolecta.colecta">
             <field name="name">The lord of the rings</field>
-            <field name="state">lost</field>
+            <field name="state">Cancelled</field>
             <field name="date_release">2021-01-02</field>
             <field name="category_id" ref="category_fantasy"/>
-            <field name="author_ids" eval="[(6, 0, [ ref('author_jrr_tolkien'), ])]"/>
+            <field name="Deliver_ids" eval="[(6, 0, [ ref('Deliver_jrr_tolkien'), ])]"/>
         </record>
 
     </data>

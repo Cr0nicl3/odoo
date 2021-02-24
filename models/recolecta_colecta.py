@@ -10,28 +10,28 @@ logger = logging.getLogger(__name__)
 
 class recolectacolecta(models.Model):
     _name = 'recolecta.colecta'
-    _description = 'recolecta colecta'
+    _description = 'Collection book'
 
     name = fields.Char('Title', required=True)
     date_release = fields.Date('Release Date')
-    author_ids = fields.Many2many('res.partner', string='Authors')
+    Deliver_ids = fields.Many2many('res.partner', string='Delivers')
     category_id = fields.Many2one('recolecta.colecta.category', string='Category')
 
     state = fields.Selection([
-        ('draft', 'Unavailable'),
-        ('available', 'Available'),
-        ('borrowed', 'Borrowed'),
-        ('lost', 'Lost')],
+        ('draft', 'Unchecked'),
+        ('checked', 'checked'),
+        ('Lend', 'Lend'),
+        ('Cancelled', 'Cancelled')],
         'State', default="draft")
 
     @api.model
     def is_allowed_transition(self, old_state, new_state):
-        allowed = [('draft', 'available'),
-                   ('available', 'borrowed'),
-                   ('borrowed', 'available'),
-                   ('available', 'lost'),
-                   ('borrowed', 'lost'),
-                   ('lost', 'available')]
+        allowed = [('draft', 'checked'),
+                   ('checked', 'Lend'),
+                   ('Lend', 'checked'),
+                   ('checked', 'Cancelled'),
+                   ('Lend', 'Cancelled'),
+                   ('Cancelled', 'checked')]
         return (old_state, new_state) in allowed
 
     def change_state(self, new_state):
@@ -42,14 +42,14 @@ class recolectacolecta(models.Model):
                 message = _('Moving from %s to %s is not allowd') % (colecta.state, new_state)
                 raise UserError(message)
 
-    def make_available(self):
-        self.change_state('available')
+    def make_checked(self):
+        self.change_state('checked')
 
-    def make_borrowed(self):
-        self.change_state('borrowed')
+    def make_Lend(self):
+        self.change_state('Lend')
 
-    def make_lost(self):
-        self.change_state('lost')
+    def make_Cancelled(self):
+        self.change_state('Cancelled')
 
     def log_all_recolecta_members(self):
         recolecta_member_model = self.env['recolecta.member']  # This is an empty recordset of model recolecta.member
@@ -99,7 +99,7 @@ class recolectaMember(models.Model):
 
     _name = 'recolecta.member'
     _inherits = {'res.partner': 'partner_id'}
-    _description = "recolecta member"
+    _description = "Collection member"
 
     partner_id = fields.Many2one('res.partner', ondelete='cascade')
     date_start = fields.Date('Member Since')
@@ -110,8 +110,8 @@ class recolectaMember(models.Model):
 class ResPartner(models.Model):
     _inherit = 'res.partner'
 
-    authored_colecta_ids = fields.Many2many(
+    Delivered_colecta_ids = fields.Many2many(
         'recolecta.colecta',
-        string='Authored colectas',
+        string='Delivered colectas',
         # relation='recolecta_colecta_res_partner_rel'  # optional
     )

@@ -2,16 +2,16 @@
 <odoo>
 
     <record id='recolecta_colecta_category_action' model='ir.actions.act_window'>
-        <field name="name">colecta Categories</field>
+        <field name="name">Collection categories</field>
         <field name="res_model">recolecta.colecta.category</field>
         <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem name="colecta Categories" id="recolecta_colecta_category_menu" parent="recolecta_base_menu" action="recolecta_colecta_category_action"/>
+    <menuitem name="Collection categories" id="recolecta_colecta_category_menu" parent="recolecta_base_menu" action="recolecta_colecta_category_action"/>
 
     <!-- Form View -->
     <record id="recolecta_colecta_category_view_form" model="ir.ui.view">
-        <field name="name">recolecta Categories Form</field>
+        <field name="name">reCollection categories Form</field>
         <field name="model">recolecta.colecta.category</field>
         <field name="arch" type="xml">
             <form>
@@ -33,7 +33,7 @@
 
     <!-- Tree(list) View -->
     <record id="recolecta_colecta_category_view_tree" model="ir.ui.view">
-        <field name="name">recolecta colecta List</field>
+        <field name="name">Collection book List</field>
         <field name="model">recolecta.colecta.category</field>
         <field name="arch" type="xml">
             <tree>

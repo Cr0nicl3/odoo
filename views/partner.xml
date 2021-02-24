@@ -3,15 +3,15 @@
   <data>
     <!-- Partners Extension -->
 
-    <record id="view_partner_author" model="ir.ui.view">
-        <field name="name">Author</field>
+    <record id="view_partner_Deliver" model="ir.ui.view">
+        <field name="name">Deliver</field>
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
             <page name="internal_notes" position="before">
-                <page name="recolecta_colectas" string="Authored colectas">
+                <page name="recolecta_colectas" string="Delivered colectas">
                 <group>
-                    <field name="authored_colecta_ids"/>
+                    <field name="Delivered_colecta_ids"/>
                 </group>
                 </page>
             </page>

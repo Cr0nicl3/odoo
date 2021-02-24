@@ -7,7 +7,7 @@ Manage recolecta
 ==============
 Description related to recolecta.
     """,  # Supports reStructuredText(RST) format
-    'author': "Parth Gajjar",
+    'Deliver': "Parth Gajjar",
     'website': "http://www.example.com",
     'category': 'Tools',
     'version': '14.0.1',

@@ -62,24 +62,24 @@
 
     <!-- Form View -->
     <record id="recolecta_colecta_view_form" model="ir.ui.view">
-        <field name="name">recolecta colecta Form</field>
+        <field name="name">Collection book Form</field>
         <field name="model">recolecta.colecta</field>
         <field name="arch" type="xml">
             <form>
                 <header>
-                    <button name="make_available" string="Make Available" type="object"/>
-                    <button name="make_borrowed"  string="Make Borrowed" type="object"/>
-                    <button name="make_lost"  string="Make Lost" type="object"/>
+                    <button name="make_checked" string="Make checked" type="object"/>
+                    <button name="make_Lend"  string="Make Lend" type="object"/>
+                    <button name="make_Cancelled"  string="Make Cancelled" type="object"/>
                     <button name="log_all_recolecta_members"  string="Log Members" type="object"/>
                     <button name="create_categories" string="Create Categories" type="object"/>
                     <button name="change_release_date" string="Update Date" type="object"/>
-                    <button name="find_colecta" string="Find colecta" type="object"/>
+                    <button name="find_colecta" string="Find collection" type="object"/>
                     <field name="state" widget="statusbar"/>
                 </header>
                 <group>
                     <group>
                         <field name="name"/>
-                        <field name="author_ids" widget="many2many_tags"/>
+                        <field name="Deliver_ids" widget="many2many_tags"/>
                     </group>
                     <group>
                         <field name="category_id"/>
@@ -92,7 +92,7 @@
 
     <!-- Tree(list) View -->
     <record id="recolecta_colecta_view_tree" model="ir.ui.view">
-        <field name="name">recolecta colecta List</field>
+        <field name="name">Collection book List</field>
         <field name="model">recolecta.colecta</field>
         <field name="arch" type="xml">
             <tree>
@@ -104,14 +104,14 @@
 
     <!-- Search View -->
     <record id="recolecta_colecta_view_search" model="ir.ui.view">
-        <field name="name">recolecta colecta Search</field>
+        <field name="name">Collection book Search</field>
         <field name="model">recolecta.colecta</field>
         <field name="arch" type="xml">
             <search>
                 <field name="name"/>
-                <field name="author_ids"/>
-                <filter string="Without Authors" name="without_author" domain="[('author_ids','=',False)]"/>
-                <filter string="Lost colectas" name="without_author" domain="[('state','=','Lost')]"/>
+                <field name="Deliver_ids"/>
+                <filter string="Without Delivers" name="without_Deliver" domain="[('Deliver_ids','=',False)]"/>
+                <filter string="Cancellled collections" name="without_Deliver" domain="[('state','=','Cancelled')]"/>
             </search>
         </field>
     </record>
