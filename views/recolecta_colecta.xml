@@ -92,7 +92,7 @@
 
     <!-- Tree(list) View -->
     <record id="recolecta_colecta_view_tree" model="ir.ui.view">
-        <field name="name">Collection book List</field>
+        <field name="name">Collection list</field>
         <field name="model">recolecta.colecta</field>
         <field name="arch" type="xml">
             <tree>

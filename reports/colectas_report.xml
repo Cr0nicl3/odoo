@@ -5,7 +5,7 @@
         <report
             id="report_colectas"
             model="recolecta.colecta.category"
-            string="colectas Report"
+            string="Collecion report"
             name="my_recolecta.report_colectas_view"
             file="my_recolecta.report_colectas"
             report_type="qweb-html" />
@@ -14,7 +14,7 @@
         <report
             id="report_colectas_pdf"
             model="recolecta.colecta.category"
-            string="colectas Report (PDF)"
+            string="Collecion report (PDF)"
             name="my_recolecta.report_colectas_view"
             file="my_recolecta.report_colectas"
             report_type="qweb-pdf" />            
